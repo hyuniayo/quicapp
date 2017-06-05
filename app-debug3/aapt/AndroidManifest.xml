@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.umich.cse.audioanalysis"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <application
+        android:name="edu.umich.cse.audioanalysis.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/forcephone_no_text"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.umich.cse.audioanalysis.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.BumpFreeActivity"
+            android:label="@string/title_activity_bump_free"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.VibrationMeasurementActivity"
+            android:label="@string/title_activity_bump_free"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.NetworkingActivity"
+            android:label="@string/title_activity_networking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.UltraPhoneActivity"
+            android:label="@string/title_activity_networking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.UltraphoneExpMainActivity"
+            android:label="ForcePhone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpPressureMovingBallActivity"
+            android:label="@string/title_activity_exp_pressure_moving_ball"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpPressureMonitorActivity"
+            android:label="@string/title_activity_exp_pressure_monitor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpPressureHandTrainerActivity"
+            android:label="@string/title_activity_exp_pressure_hand_trainer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.BumpFree.ExpActivity.BumpfreeExpMainActivity"
+            android:label="@string/title_activity_bumpfree_exp_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="edu.umich.cse.audioanalysis.BumpFree.ExpActivity.ExpObjectMonitorActivity"
+            android:label="@string/title_activity_exp_object_monitor"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpBatteryActivity"
+            android:label="@string/title_activity_exp_battery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpSqueezeGoBackActivity"
+            android:label="@string/title_activity_exp_squeeze_go_back"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpSqueezeMonitorActivity"
+            android:label="@string/title_activity_exp_pressure_monitor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpPressureButtonActivity"
+            android:label="@string/title_activity_exp_pressure_button"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpPressureCorrectActivity"
+            android:label="@string/title_activity_exp_pressure_correct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpTouchCalibrationByExtSensorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpTouchCalibrationByScaleActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="edu.umich.cse.audioanalysis.UsbRelated.UsbService"
+            android:enabled="true" />
+
+        <activity
+            android:name="edu.umich.cse.audioanalysis.UsbRelated.TestUsbActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.UsbRelated.TestExtForceReaderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpRealtimeRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpPressureEngineSoundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ExpActivity.ExpServiceActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="edu.umich.cse.audioanalysis.Ultraphone.ForcePhoneService"
+            android:exported="true" />
+
+        <activity
+            android:name="edu.umich.cse.audioanalysis.EchoTag.ExpActivity.ExpSensingOnly"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

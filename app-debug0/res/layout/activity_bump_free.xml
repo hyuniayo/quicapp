@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.com.samsung.audioanalysis.BumpFreeActivity">
+
+    <TextView android:text="BumpFree test app" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHello" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vol = ?"
+        android:id="@+id/txtVol"
+        android:layout_below="@+id/txtTiltSensed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Vol"
+        android:id="@+id/btnSelectVol"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtVol"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Survey"
+        android:id="@+id/btnStartSurvey"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sound = ?"
+        android:id="@+id/txtSound"
+        android:layout_below="@+id/btnSelectVol"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Sound"
+        android:id="@+id/btnSelectSound"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtSound"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Result = ?"
+        android:id="@+id/txtResult"
+        android:layout_above="@+id/btnStartSurvey"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tilt"
+        android:id="@+id/txtTiltSensed"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Shift = ? (optional)"
+        android:id="@+id/txtShift"
+        android:layout_below="@+id/btnSelectTilt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Shift"
+        android:id="@+id/btnSelectShift"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtShift"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tilt = ? (optional)"
+        android:id="@+id/txtTilt"
+        android:layout_below="@+id/btnSelectSound"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Tilt"
+        android:id="@+id/btnSelectTilt"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtTilt"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Angle = ? (optional)"
+        android:id="@+id/txtAngle"
+        android:layout_below="@+id/btnSelectShift"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Angle"
+        android:id="@+id/btnSelectAngle"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtAngle"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag"
+        android:id="@+id/btnTag"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/txtResult"
+        android:layout_alignTop="@+id/btnSelectAngle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="x (m)"
+        android:id="@+id/txtTagInfo"
+        android:layout_below="@+id/btnSelectShift"
+        android:layout_alignRight="@+id/btnTag"
+        android:layout_alignEnd="@+id/btnTag" />
+
+</RelativeLayout>

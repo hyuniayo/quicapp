@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Ultraphone.ExpActivity.ExpTouchCalibrationByExtSensorActivity">
+
+
+    <edu.umich.cse.audioanalysis.Ultraphone.Graphic.CircleView
+        android:id="@+id/viewCircle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/textInfo"
+        android:layout_toLeftOf="@+id/btnStartOrStop"
+        android:layout_toStartOf="@+id/btnStartOrStop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Instruction"
+        android:id="@+id/textInstruction"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Info"
+        android:id="@+id/textInfo"
+        android:layout_below="@+id/textInstruction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textCountDown"
+        android:layout_below="@+id/textInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Info"
+        android:id="@+id/textInfo2"
+        android:layout_marginBottom="86dp"
+        android:layout_above="@+id/textView10"
+        android:layout_alignLeft="@+id/textInfo"
+        android:layout_alignStart="@+id/textInfo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textInfo2"
+        android:layout_alignEnd="@+id/textInfo2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/btnStartOrStop"
+        android:layout_alignTop="@+id/textInfo2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.com.samsung.audioanalysis.Ultraphone.ExpActivity.UltraphoneExpMainActivity"
+    >
+
+    <TextView android:text="Welcome to ForcePhone" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pressure:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Ball-Moving Game"
+        android:id="@+id/btnGoPressureMovingBall"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Hard-Pressed Button"
+        android:id="@+id/btnGoPressureButton"
+        android:layout_below="@+id/btnGoPressureMovingBall"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Engine Sound"
+        android:id="@+id/btnGoPressureEngineSound"
+        android:layout_below="@+id/btnGoPressureButton"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Force Monitor"
+        android:id="@+id/btnGoPressureMonitor"
+        android:layout_below="@+id/btnGoPressureEngineSound"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Calibration"
+        android:id="@+id/btnGoPressureCalibration"
+        android:layout_below="@+id/btnGoPressureMonitor"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Realtime"
+        android:id="@+id/btnGoRealtime"
+        android:layout_below="@+id/btnGoPressureCalibration"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        android:id="@+id/btnGoService"
+        android:layout_below="@+id/btnGoRealtime"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Squeeze:"
+        android:id="@+id/txtTitleSqueeze"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/btnGoRealtime"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:id="@+id/btnGoSqueezeGoBack"
+        android:layout_below="@+id/txtTitleSqueeze"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Hand Trainer"
+        android:id="@+id/btnGoPressureHandTrainer"
+        android:layout_below="@+id/btnGoSqueezeGoBack"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Monitor"
+        android:id="@+id/btnGoSqueezeMonitor"
+        android:layout_below="@+id/btnGoPressureHandTrainer"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Device Info"
+        android:id="@+id/txtDeviceInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
