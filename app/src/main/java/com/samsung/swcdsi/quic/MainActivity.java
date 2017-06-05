@@ -1,13 +1,19 @@
 package com.samsung.swcdsi.quic;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorManager;
 import android.os.Vibrator;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -55,6 +61,7 @@ public class MainActivity extends AppCompatActivity /*implements UltraphoneContr
 
         textResult = (TextView) findViewById(com.samsung.swcdsi.quic.R.id.textResult);
 
+        requestPermissionsDenial();
 
 /*
         */
@@ -112,6 +119,34 @@ public class MainActivity extends AppCompatActivity /*implements UltraphoneContr
 */
 
         startService(new Intent(getApplicationContext(), QuicService.class)); // 서비스 시작
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_settings) {
+            Intent intentSetItem = new Intent(this, SetItemActivity.class);
+            startActivity(intentSetItem);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void requestPermissionsDenial() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CALL_PHONE)) {
+                Log.d("MainActivity", "requestPermissionDenail - CALL_PHONE");
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE, Manifest.permission.CALL_PRIVILEGED, Manifest.permission.READ_PHONE_STATE, Manifest.permission.PROCESS_OUTGOING_CALLS}, 0);
+            }
+        }
     }
 
     @Override

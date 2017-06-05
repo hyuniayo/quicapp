@@ -22,6 +22,8 @@
         </activity>
         <activity android:name="com.samsung.swcdsi.quic.GoOldDemoActivity">
         </activity>
+        <activity android:name="com.samsung.swcdsi.quic.SetItemActivity">
+        </activity>
         <service android:name="com.samsung.swcdsi.quic.QuicService"></service>
 
         <receiver
@@ -33,7 +35,6 @@
                 <action android:name="android.intent.action.ACTION_SQUEEZE_DETECTED" />
             </intent-filter>
         </receiver>
-
     </application>
 
 </manifest>

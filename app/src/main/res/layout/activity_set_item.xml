@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.samsung.swcdsi.quic.SetItemActivity">
+
+    <TextView
+        android:id="@+id/prev_set"
+        android:text="Below is the application set in QUIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="5dp"
+        tools:layout_editor_absoluteX="8dp" />
+    <TextView
+        android:id="@+id/set_pkg"
+        android:layout_below="@+id/prev_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/set_act"
+        android:layout_below="@+id/set_pkg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/list_item"
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/set_act"
+        android:gravity="center">
+    </GridView>
+</RelativeLayout>
